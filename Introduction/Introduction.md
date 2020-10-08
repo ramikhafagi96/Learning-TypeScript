@@ -1,5 +1,4 @@
 # Introduction
----------------
 In this introduction i will document the basics of TypeScript that I have learnt.
 ## Table Of Contents
 - [Compiling TS](#compiling-ts)
@@ -14,7 +13,6 @@ In this introduction i will document the basics of TypeScript that I have learnt
 - [Function Signature Overloading](#function-signature-overloading)
 - [Lexical Scope](#lexical-scope)
 ## Compiling TS
----
 ``` bash
 # this generates an ES3-JS file
 tsc src/index.ts
@@ -30,7 +28,6 @@ tsc src.index.ts --target ES2017 --module commonjs --watch
 When you compile a ts file the output js is synced with the ts, when you make changes to ts the output js changes accordingly without recompile.
 
 ## Configuring TS
------
 Create a tsconfig.json file in the project directory.
 Note: What you need to specify in a <strong>tsconfig</strong> file is:
   1. Files to compile
@@ -51,7 +48,6 @@ Example for a <strong>tsconfig.json</strong> file
 ```
 
 ## Variables
----
 - when you declare a <strong>const</strong> it's type becomes the value of it.
 ```typescript
 // here y has a type of y: "hello world"
@@ -79,7 +75,6 @@ x = "5";
 ```
 
 ## Variable Declarations
----
 - if you declare a variable without a type and without initialization this variable will have a type of <strong>any</strong>
 ```typescript
 // this will not cause an error
@@ -96,7 +91,6 @@ z = "5";
 ```
 
 ## Arrays & Tuples
----
 - you need to be specific with arrays so you need to initialize an array with a type
 ```typescript
 let a: number[] = [];
@@ -122,7 +116,6 @@ let tup: [number, string, string, number] = [
 ```
 
 ## Objects
----
 - when assigning an object you should always add all the required fields
 ```typescript
 let coolObj: { firstName: string; lastName: string; email: string; message: string };
@@ -162,7 +155,6 @@ let myContact: Contact = {
 };
 ```
 ## Union & Intersection
----
 - <strong>Union Types:</strong> we can have a type that can be one of several things
 ```typescript
 interface HasPhoneNumber {
@@ -207,11 +199,9 @@ otherContactInfo.phone;
 ```
 
 ## Type Systems & Object Shapes
----
 - TypeScript uses a <strong>Structural Type System</strong> which only cares about the <strong>shape</strong> of an object. We don't need to define classes for every type we need.
 
 ## Functions
----
 - function arguments and return can have <strong>type annotations</strong>
 ```typescript
 interface HasEmail {
@@ -292,7 +282,6 @@ function getNameParts(contact: { name: string }) {
 Here the <strong>type inference</strong> caused unpredictable return type which may break some code using this function.
 
 ## Function Signature Overloading
----
 - we can provide multiple function signatures, let's say we have a function implementation like this:
 ```typescript
 interface HasPhoneNumber {
@@ -365,7 +354,6 @@ contactPeople("email", { name: "foo", phone: 12345678 });
 ```
 
 ## Lexical Scope
----
 - sometimes we may run into a problem with determining what is the value of <strong>this</strong> when you invoke a function, take this example:
 ```typescript
 interface HasPhoneNumber {
