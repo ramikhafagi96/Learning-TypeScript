@@ -4,7 +4,7 @@ In this section we will get to know how classes works in TypeScript.
 ## Table Of Contents
 - [Implementing Interfaces](#implementing-interfaces)
 - [Access Modifiers Initialization](#access-modifiers-initialization)
-- [Definite Assignment & Lazy Initialization](#definite-assignemnt-&-lazy-initialization)
+- [Definite Assignment and Lazy Initialization](#definite-assignemnt-and-lazy-initialization)
 - [Abstract Classes](#abstract-classes)
 
 ## Implementing Interfaces
@@ -48,7 +48,7 @@ class ParamPropContact implements HasEmail {
 }
 ```
 
-## Definite Assignment & Lazy Initialization
+## Definite Assignment and Lazy Initialization
 
 - sometime we may have properties that at the first stage of the application lifecycle it may not have a value.
 - it may be initialized by an <strong>async</strong> API call, or you're sure that at some point in the futrue it will definetly have a value.
