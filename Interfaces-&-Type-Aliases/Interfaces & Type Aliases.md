@@ -1,11 +1,11 @@
 # Interfaces & Type Aliases
 In this section we will get into more details about interfaces and heritage classes.
 ## Table Of Contents
-- [Type Aliases & extends](#type-aliases-and-extends)
-- [Dictionary Objects & Index Signatures](#dictionary-objects-&-index-signatures)
+- [Type Aliases and extends](#type-aliases-and-extends)
+- [Dictionary Objects and Index Signatures](#dictionary-objects-and-index-signatures)
 - [Combining Interfaces](#combining-interfaces)
 
-## Type Aliases & extends
+## Type Aliases and extends
 - <strong>Type Alias:</strong> giving a type a name.
 ```typescript
 type StringOrNumber = string | number;
@@ -44,7 +44,7 @@ const emailer: ContactMessenger1 = (_contact, _message) => {
 
 };
 ```
-## Dictionary Objects & Index Signatures
+## Dictionary Objects and Index Signatures
 - if we declared an interface as an index signature for a dictionary object like this:
 ```typescript
 /**
