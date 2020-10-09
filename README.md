@@ -2,7 +2,8 @@
 This repository contains the notes i'm taking while learning TypeScript
 
 ## Table of Content
-* [Introduction]
+* <a href="https://github.com/ramikhafagi96/Learning-TypeScript/blob/main/Introduction/Introduction.md">Introduction</a>
+* <a href="https://github.com/ramikhafagi96/Learning-TypeScript/blob/main/Interfaces-%26-Type-Aliases/Interfaces%20%26%20Type%20Aliases.md">Interfaces & Type Aliases</a>
 
 ## References
 * Some of the code examples are taken from:
