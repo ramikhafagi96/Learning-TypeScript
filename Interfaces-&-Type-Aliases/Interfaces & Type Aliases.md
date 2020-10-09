@@ -1,7 +1,7 @@
 # Interfaces & Type Aliases
 In this section we will get into more details about interfaces and heritage classes.
 ## Table Of Contents
-- [Type Aliases & extends](#type-aliases-and-extends)
+- [Type Aliases & extends](#type-aliases-&-extends)
 - [Dictionary Objects & Index Signatures](#dictionary-objects-&-index-signatures)
 - [Combining Interfaces](#combining-interfaces)
 
